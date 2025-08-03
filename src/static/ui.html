@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en" dark class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoniText Containers</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Custom styles for the glassmorphism effect */
+    .glass-container {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 dark:bg-slate-950 text-zinc-900 dark:text-white min-h-screen p-8 transition-colors duration-300">
+
+<header class="w-full border-b border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <h1 class="text-2xl font-semibold tracking-tight">Moni<span class="text-brand">Text</span></h1>
+
+    <!-- Nav -->
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#" class="hover:text-brand transition">Home</a>
+      <a href="#" class="hover:text-brand transition">Docs</a>
+      ...
+    </nav>
+
+    <!-- CTA -->
+    <a href="#" class="ml-4 btn-primary">Dashboard</a>
+  </div>
+</header>
+
+<a class="text-blue-400 inline-flex items-center justify-center rounded-md bg-brand px-4 py-2 text-sm font-semibold text-black shadow-sm transition hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2" href="#">
+  Action
+</a>
+
+<!-- Light Version -->
+<div class="w-full border-b border-zinc-800 bg-white text-zinc-900 dark:bg-zinc-900 dark:text-white">
+  <header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <h1 class="text-2xl font-semibold tracking-tight">Moni<span class="text-[#3ECF8E]">Text</span></h1>
+
+    <!-- Navigation -->
+    <nav class="hidden items-center gap-6 text-sm font-medium md:flex">
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">Home</a>
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">Docs</a>
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">GitHub</a>
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">About</a>
+    </nav>
+
+    <!-- CTA Button -->
+    <div class="ml-4">
+      <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#3ECF8E] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#36b67a] focus:ring-2 focus:ring-[#3ECF8E] focus:ring-offset-2 focus:outline-none"> Dashboard </a>
+    </div>
+  </header>
+</div>
+
+<!-- Dark Version -->
+<div class="w-full border-b transition-colors duration-300 border-zinc-700 bg-slate-950 text-white">
+  <header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <!-- Logo with Supabase-style green -->
+    <h1 class="text-2xl font-semibold tracking-tight">Moni<span class="text-[#3ECF8E]">Text</span></h1>
+
+    <!-- Navigation -->
+    <nav class="hidden items-center gap-6 text-sm font-medium md:flex">
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">Home</a>
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">Docs</a>
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">GitHub</a>
+      <a href="#" class="transition-colors hover:text-[#3ECF8E]">About</a>
+    </nav>
+
+    <!-- CTA Button -->
+    <div class="ml-4">
+      <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#3ECF8E] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#36b67a] focus:ring-2 focus:ring-[#3ECF8E] focus:ring-offset-2 focus:outline-none"> Dashboard </a>
+    </div>
+  </header>
+</div>
+
+<br/>
+  
+  <div class="max-w-4xl mx-auto space-y-12">
+    
+    <!-- --- Simple Container --- -->
+    <div class="p-8 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-sm">
+      <h2 class="text-xl font-semibold mb-2">Simple Container</h2>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+        This is a clean, simple card with a subtle border and background, following the established color palette. It is perfect for displaying content without distractions.
+      </p>
+      <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#3ECF8E] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#36b67a] focus:outline-none focus:ring-2 focus:ring-[#3ECF8E] focus:ring-offset-2">
+        Learn More
+      </a>
+    </div>
+
+    <!-- --- Glassmorphism Container --- -->
+    <div class="p-8 rounded-xl border border-white/20 dark:border-white/10 bg-white/10 dark:bg-white/5 glass-container shadow-lg">
+      <h2 class="text-xl font-semibold mb-2">Glassmorphism Container</h2>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+        A modern, semi-transparent container that blurs the background. It provides a sleek, layered look while still allowing the page's background to be visible.
+      </p>
+      <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#3ECF8E] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#36b67a] focus:outline-none focus:ring-2 focus:ring-[#3ECF8E] focus:ring-offset-2">
+        See Demos
+      </a>
+    </div>
+    
+    <!-- --- Opaque Container --- -->
+    <div class="p-8 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-2xl">
+      <h2 class="text-xl font-semibold mb-2">Opaque Container</h2>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+        This container has a strong, solid background and a more pronounced shadow. It's ideal for components that need to stand out from the rest of the page.
+      </p>
+      <a href="#" class="inline-flex items-center justify-center rounded-md bg-[#3ECF8E] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#36b67a] focus:outline-none focus:ring-2 focus:ring-[#3ECF8E] focus:ring-offset-2">
+        Get Started
+      </a>
+    </div>
+
+
+    <!-- --- Tab Component --- -->
+    <div class="p-8 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Tabs Component</h2>
+      
+      <div class="tab-container">
+        <!-- Radio inputs with the 'peer' utility -->
+        <input type="radio" name="tabs-radio" id="tab-radio-1" class="peer/tab1 hidden" checked>
+        <input type="radio" name="tabs-radio" id="tab-radio-2" class="peer/tab2 hidden">
+        <input type="radio" name="tabs-radio" id="tab-radio-3" class="peer/tab3 hidden">
+      
+        <!-- Tab labels -->
+        <div class="flex space-x-2 border-b border-zinc-200 dark:border-zinc-700 pb-4">
+          <label for="tab-radio-1" class="px-4 py-2 text-sm font-medium rounded-md cursor-pointer transition-colors duration-200 border-b-2 border-transparent peer-checked/tab1:border-[#3ECF8E] peer-checked/tab1:text-[#3ECF8E] hover:bg-zinc-100 dark:hover:bg-zinc-800">
+            Overview
+          </label>
+          <label for="tab-radio-2" class="px-4 py-2 text-sm font-medium rounded-md cursor-pointer transition-colors duration-200 border-b-2 border-transparent peer-checked/tab2:border-[#3ECF8E] peer-checked/tab2:text-[#3ECF8E] hover:bg-zinc-100 dark:hover:bg-zinc-800">
+            Settings
+          </label>
+          <label for="tab-radio-3" class="px-4 py-2 text-sm font-medium rounded-md cursor-pointer transition-colors duration-200 border-b-2 border-transparent peer-checked/tab3:border-[#3ECF8E] peer-checked/tab3:text-[#3ECF8E] hover:bg-zinc-100 dark:hover:bg-zinc-800">
+            Activity
+          </label>
+        </div>
+      
+        <!-- Tab content -->
+        <div class="mt-4">
+          <div id="tab-content-1" class="tab-content peer-checked/tab1:block hidden">
+            <p class="text-sm text-zinc-600 dark:text-zinc-400">
+              This is the content for the Overview tab. It provides a summary of the key information.
+            </p>
+          </div>
+          <div id="tab-content-2" class="tab-content peer-checked/tab2:block hidden">
+            <p class="text-sm text-zinc-600 dark:text-zinc-400">
+              Here you can manage your settings. Customize your preferences and account details.
+            </p>
+          </div>
+          <div id="tab-content-3" class="tab-content peer-checked/tab3:block hidden">
+            <p class="text-sm text-zinc-600 dark:text-zinc-400">
+              This tab shows your recent activity and notifications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-container">
+  
+
+  </div>
+</body>
+</html>

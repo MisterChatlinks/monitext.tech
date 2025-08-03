@@ -1,0 +1,186 @@
+@import url("./Satoshi_Complete/Fonts/WEB/css/satoshi.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Satoshi Font Faces */
+:root {
+    --font-satoshi: "Satoshi-Regular", sans-serif;
+    --font-satoshi-light: "Satoshi-Light", sans-serif;
+    --font-satoshi-bold: "Satoshi-Bold", sans-serif;
+    --font-satoshi-italic: "Satoshi-Italic", sans-serif;
+    --font-satoshi-medium: "Satoshi-Medium", sans-serif;
+    --font-satoshi-medium-italic: "Satoshi-MediumItalic", sans-serif;
+    --font-satoshi-light-italic: "Satoshi-LightItalic", sans-serif;
+    --font-satoshi-bold-italic: "Satoshi-BoldItalic", sans-serif;
+    --font-satoshi-black: "Satoshi-Black", sans-serif;
+    --font-satoshi-black-italic: "Satoshi-BlackItalic", sans-serif;
+    --font-satoshi-variable: "Satoshi-Variable", sans-serif;
+    --font-satoshi-variable-italic: "Satoshi-VariableItalic", sans-serif;
+}
+
+/* Font Sizes and Line Heights */
+:root {
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-sm: 14px;
+    --line-height-base: 1.5;
+}
+
+:root {
+    --font-size-heading-1: 2.25rem;
+    /* 36px */
+    --font-size-heading-2: 1.875rem;
+    /* 30px */
+    --font-size-heading-3: 1.5rem;
+    /* 24px */
+    --font-size-heading-4: 1.25rem;
+    /* 20px */
+    --font-size-heading-5: 1rem;
+    /* 16px */
+    --font-size-heading-6: 0.875rem;
+    /* 14px */
+}
+
+:root {
+    --transition-fast: 150ms ease;
+    --transition-medium: 300ms ease;
+    --transition-slow: 500ms ease;
+}
+
+
+@layer base {
+
+    .font-satoshi {
+        font-family: "Satoshi-Regular", sans-serif;
+    }
+
+    .font-satoshi-light {
+        font-family: "Satoshi-Light", sans-serif;
+    }
+
+    .font-satoshi-bold {
+        font-family: "Satoshi-Bold", sans-serif;
+    }
+
+    .font-satoshi-italic {
+        font-family: "Satoshi-Italic", sans-serif;
+    }
+
+    .font-satoshi-medium {
+        font-family: "Satoshi-Medium", sans-serif;
+    }
+
+    .font-satoshi-medium-italic {
+        font-family: "Satoshi-MediumItalic", sans-serif;
+    }
+
+    .font-satoshi-light-italic {
+        font-family: "Satoshi-LightItalic", sans-serif;
+    }
+
+    .font-satoshi-bold-italic {
+        font-family: "Satoshi-BoldItalic", sans-serif;
+    }
+
+    .font-satoshi-black {
+        font-family: "Satoshi-Black", sans-serif;
+    }
+
+    .font-satoshi-black-italic {
+        font-family: "Satoshi-BlackItalic", sans-serif;
+    }
+
+    .font-satoshi-variable {
+        font-family: "Satoshi-Variable", sans-serif;
+    }
+
+    .font-satoshi-variable-italic {
+        font-family: "Satoshi-VariableItalic", sans-serif;
+    }
+
+    body {
+        @apply bg-background-light dark:bg-background-night text-text-dark dark:text-text-light min-h-screen p-8 transition-colors duration-300 font-satoshi;
+        font-family: var(--font-satoshi);
+    }
+
+    a {
+        @apply text-accent-lighter hover:text-accent-darker;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: var(--font-size-heading-1);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: var(--font-size-heading-2);
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 0.75rem;
+    }
+
+    h3 {
+        font-size: var(--font-size-heading-3);
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+
+    h4 {
+        font-size: var(--font-size-heading-4);
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 0.25rem;
+    }
+
+    h5 {
+        font-size: var(--font-size-heading-5);
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    h6 {
+        font-size: var(--font-size-heading-6);
+        font-weight: 400;
+        line-height: 1.7;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-satoshi-bold;
+        color: var(--color-main-text);
+        font-family: var(--font-satoshi-bold);
+    }
+
+    p {
+        @apply font-satoshi-bold text-lg;
+    }
+}
+
+@layer utilities {
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-md bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2
+    }
+
+    .container-simple {
+        @apply p-8 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark shadow-sm
+    }
+
+    .container-glass {
+        @apply
+    }
+
+    .container-opaque {
+        @apply p-8 rounded-xl border border-surface-glass-200 dark:border-surface-glass-100 bg-surface-glass-100 dark:bg-surface-glass-50 glass-container shadow-lg
+    }
+}
+
+@layer components {}
