@@ -104,11 +104,6 @@
         font-family: var(--font-satoshi);
     }
 
-    a {
-        @apply text-accent-lighter hover:text-accent-darker;
-        text-decoration: none;
-    }
-
     h1 {
         font-size: var(--font-size-heading-1);
         font-weight: 700;
@@ -180,6 +175,10 @@
 
     .container-opaque {
         @apply p-8 rounded-xl border border-surface-glass-200 dark:border-surface-glass-100 bg-surface-glass-100 dark:bg-surface-glass-50 glass-container shadow-lg
+    }
+
+    .accent-text-effects {
+        @apply hover:text-accent-lighter dark:hover:text-accent-darker
     }
 }
 
