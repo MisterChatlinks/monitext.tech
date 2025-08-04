@@ -16,6 +16,9 @@ import * as $test from "./routes/test.tsx";
 import * as $ui from "./routes/ui.tsx";
 import * as $AuthStateManager_index from "./islands/AuthStateManager/index.tsx";
 import * as $Components_Header_index from "./islands/Components/Header/index.tsx";
+import * as $Components_Header_varient_v1 from "./islands/Components/Header/varient/v1.tsx";
+import * as $Components_Header_varient_v2 from "./islands/Components/Header/varient/v2.tsx";
+import * as $Components_Header_varient_v3 from "./islands/Components/Header/varient/v3.tsx";
 import * as $Components_LoginForm_index from "./islands/Components/LoginForm/index.tsx";
 import * as $Components_RegisterForm_index from "./islands/Components/RegisterForm/index.tsx";
 import * as $Components_SignForm_index from "./islands/Components/SignForm/index.tsx";
@@ -45,6 +48,9 @@ const manifest = {
   islands: {
     "./islands/AuthStateManager/index.tsx": $AuthStateManager_index,
     "./islands/Components/Header/index.tsx": $Components_Header_index,
+    "./islands/Components/Header/varient/v1.tsx": $Components_Header_varient_v1,
+    "./islands/Components/Header/varient/v2.tsx": $Components_Header_varient_v2,
+    "./islands/Components/Header/varient/v3.tsx": $Components_Header_varient_v3,
     "./islands/Components/LoginForm/index.tsx": $Components_LoginForm_index,
     "./islands/Components/RegisterForm/index.tsx":
       $Components_RegisterForm_index,
