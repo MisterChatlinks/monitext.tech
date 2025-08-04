@@ -5,7 +5,7 @@ export default function Layout({ Component }: PageProps) {
   return (
     <div className="w-[100vw] h-[100vh] flex flex-col">
       <div>
-        <HeaderIsland view="v2" />
+        <HeaderIsland view="v3" />
       </div>
       <div>
         <Component/>
