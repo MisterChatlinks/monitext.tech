@@ -23,11 +23,11 @@ export function SnackBarManager() {
     }, [snackBarValue]);
 
     return (
-        <div class="snack-bar-manager fixed top-4 right-4 z-50 flex flex-col items-end space-y-2">
+        <div class="snack-bar-manager fixed top-4 left-1/2 z-50 flex flex-col items-end space-y-2">
             {snackBarValue.map((snack) => (
                 <div
                     className={`snack-bar
-                        max-w-xs p-3 rounded-lg shadow-md text-white transition-all duration-300
+                        max-w-xs p-3 rounded-lg shadow-md  text-white transition-all duration-300
                         ${snack.type === "success" ? "bg-green-500" : ""}
                         ${snack.type === "error" ? "bg-red-500" : ""}
                         ${snack.type === "info" ? "bg-blue-500" : ""}`}

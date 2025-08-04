@@ -6,18 +6,18 @@ export function ThemeManager() {
 
   const theme = useTheme();
   const pref = usePreference()
+  const toggleTheme = useToggleTheme()
 
   useEffect(() => {
     const storedTheme = pref.get(PrefRecord.theme)
     const systemPreference = globalThis.matchMedia('(prefers-color-scheme: dark)').matches;
-    const toggleTheme = useToggleTheme()
 
     if (storedTheme) {
       storedTheme != theme && toggleTheme()
     }
     else if (systemPreference) {
       theme != "dark" && toggleTheme()
-    }
+    } 
   }, []);
 
   useEffect(() => {
