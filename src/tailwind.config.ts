@@ -1,6 +1,7 @@
 import { type Config } from "tailwindcss";
 
-export default {
+export default {     
+  darkMode: 'class', // dark mode support
   content: [
     "{routes,islands,components}/**/*.{ts,tsx,js,jsx}",
   ],
@@ -69,8 +70,9 @@ export default {
         "background": {
           "light": "#f3f4f6",
           "night": "#020618",
-          "lighter": "#f5f5f5",
-          "nightly": "#090c08"
+          "lighter": "#ffffff",
+          "nightly": "#090c08",
+          "argent": "#C0C0C0"
         },
         "text": {
           "dark": "#020618",
