@@ -15,6 +15,7 @@ import * as $register from "./routes/register.tsx";
 import * as $test from "./routes/test.tsx";
 import * as $ui from "./routes/ui.tsx";
 import * as $AuthStateManager_index from "./islands/AuthStateManager/index.tsx";
+import * as $Components_FAQ_index from "./islands/Components/FAQ/index.tsx";
 import * as $Components_Header_index from "./islands/Components/Header/index.tsx";
 import * as $Components_Header_varient_v1 from "./islands/Components/Header/varient/v1.tsx";
 import * as $Components_Header_varient_v2 from "./islands/Components/Header/varient/v2.tsx";
@@ -47,6 +48,7 @@ const manifest = {
   },
   islands: {
     "./islands/AuthStateManager/index.tsx": $AuthStateManager_index,
+    "./islands/Components/FAQ/index.tsx": $Components_FAQ_index,
     "./islands/Components/Header/index.tsx": $Components_Header_index,
     "./islands/Components/Header/varient/v1.tsx": $Components_Header_varient_v1,
     "./islands/Components/Header/varient/v2.tsx": $Components_Header_varient_v2,
