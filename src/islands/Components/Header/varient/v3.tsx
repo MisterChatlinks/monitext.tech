@@ -32,7 +32,7 @@ export function HeaderComponentV3({
             Docs
           </a>
           <a href="#" className="transition-colors hover:text-brand">
-            GitHub
+            Blog
           </a>
           <a href="#" className="transition-colors hover:text-brand">
             About
