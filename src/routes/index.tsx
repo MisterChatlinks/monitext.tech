@@ -1,8 +1,11 @@
 import { Markdown } from "#components/dynamics/markdown-div/index.tsx";
+import FAQIsland from "#islands/Components/FAQ/index.tsx";
 
 export default function Home() {
   return (
     <main className="min-h-screen px-6 py-12 bg-background-light dark:bg-background-night text-text-dark dark:text-text-light font-satoshi transition-colors duration-500 ease-in-out">
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* Prenstation */}
       <div className="flex flex-col md:flex-row  items-center justify-center min-h-max max-w-7xl mx-auto">
         {/* Left Section - Hero Text */}
         <section className="flex flex-col items-start flex-1 mb-12 md:mb-0 md:mr-16">
@@ -65,6 +68,8 @@ const { monitext, mtxt } = createRuntime({ load: [policies], config, format })`}
         </div>
       </div>
 
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* Runtime */}
       <div className="flex flex-col items-center py-12 px-6 bg-background-light dark:bg-background-night transition-colors duration-500 ease-in-out">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-text-dark dark:text-text-light">
@@ -113,6 +118,8 @@ const { monitext, mtxt } = createRuntime({ load: [policies], config, format })`}
         </a>
       </div>
 
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* How It works */}
       <div className="flex flex-col items-center py-16 px-6 bg-background-lighter dark:bg-background-nightly transition-colors duration-500 ease-in-out">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-dark dark:text-text-light mb-16">
           How It Works
@@ -198,6 +205,8 @@ const { monitext, mtxt } = createRuntime({ load: [policies], config, format })`}
         </div>
       </div>
 
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* How To Use */}
       <div className="flex flex-col items-center py-16 px-6 bg-background-light dark:bg-background-nightly font-satoshi transition-colors duration-500">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-dark dark:text-text-light mb-12">
           How to use
@@ -298,6 +307,8 @@ Bun, At 7/30/2025, 10:45:17 PM
         </div>
       </div>
 
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* Log Levels */}
       <div className="flex flex-col items-center py-16 px-6 bg-background-light dark:bg-background-nightly font-satoshi transition-colors duration-500">
         <h1 className="text-4xl sm:text-5xl font-bold text-text-dark dark:text-text-light mb-12 text-center">
           Log Levels & Features
@@ -449,7 +460,8 @@ const add = hooks.retrace({
           </div>
         </div>
       </div>
-
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* Pricing */}
       <div className="flex flex-col items-center py-16 px-6 bg-background-lighter dark:bg-background-nightly font-satoshi transition-colors duration-500">
         <h1 className="text-4xl sm:text-5xl font-bold text-text-dark dark:text-text-light mb-4 text-center">
           Available Plans (Pricing)
@@ -488,7 +500,7 @@ const add = hooks.retrace({
                 </strong>{" "}
                 concurrent alert channels per project
               </li>
-                            <li className="relative group">
+              <li className="relative group">
                 <strong className="text-text-dark dark:text-text-light">
                   30
                 </strong>{" "}
@@ -512,19 +524,6 @@ const add = hooks.retrace({
                   </ul>
                 </div>
               </li>
-              {/* <li>
-                <strong className="text-text-dark dark:text-text-light">
-                  30
-                </strong>{" "}
-                Repo Analysis Token per month
-                <dl className="ml-4 text-xs text-text-dark dark:text-text-light mt-1">
-                  <dd>- Retrace error occurrences</dd>
-                  <dd>- Bottlenecks</dd>
-                  <dd>- Call graph tracing</dd>
-                  <dd>- Insecurities</dd>
-                  <dd>- File dependencies</dd>
-                </dl>
-              </li> */}
             </ul>
 
             <a
@@ -563,22 +562,7 @@ const add = hooks.retrace({
                 </strong>{" "}
                 concurrent alert channels per project
               </li>
-              {
-                /* <li>
-                <strong className="text-text-dark dark:text-text-light">
-                  300
-                </strong>{" "}
-                Repo Analysis Token per month <span className="ml-2 text-xs text-text-soft">(What's this?)             <dl className="ml-4 text-xs text-text-dark dark:text-text-light mt-1">
-                  <dd>- Retrace error occurrences</dd>
-                  <dd>- Bottlenecks</dd>
-                  <dd>- Call graph tracing</dd>
-                  <dd>- Insecurities</dd>
-                  <dd>- File dependencies</dd>
-                </dl></span>
 
-
-              </li> */
-              }
               <li className="relative group">
                 <strong className="text-text-dark dark:text-text-light">
                   300
@@ -644,7 +628,7 @@ const add = hooks.retrace({
                 </strong>{" "}
                 alert channels
               </li>
-                            <li className="relative group">
+              <li className="relative group">
                 <strong className="text-text-dark dark:text-text-light">
                   Unlimited
                 </strong>{" "}
@@ -678,6 +662,11 @@ const add = hooks.retrace({
             </a>
           </div>
         </div>
+      </div>
+      {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+      {/* FAQ */}
+      <div id="FAQ">
+        <FAQIsland />
       </div>
     </main>
   );
