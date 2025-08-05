@@ -104,7 +104,7 @@
     }
 
     body {
-        @apply bg-background-light dark:bg-background-night text-text-dark dark:text-text-light max-w-full max-h-full w-full overflow-y-auto  transition-colors duration-300 font-satoshi;
+        @apply bg-background-light dark:bg-background-night text-text-dark dark:text-text-light max-w-full max-h-full w-full overflow-y-auto transition-colors duration-300 font-satoshi;
         font-family: var(--font-satoshi);
     }
 
@@ -180,6 +180,37 @@
     .accent-text-effects {
         @apply hover:text-accent-lighter dark:hover:text-accent-darker
     }
+
+    .markdown-code {
+        @apply relative p-4 bg-surface-glass-100 rounded-lg border border-brand text-sm font-mono text-text-dark dark:text-text-light overflow-x-auto shadow-sm;
+
+        .lang-name {
+            @apply absolute top-2 right-2 px-2 py-1 bg-brand-hover text-white text-xs font-semibold rounded-md shadow-sm uppercase;
+        }
+
+        code {
+            @apply block whitespace-pre leading-relaxed text-xs md:text-sm;
+        }
+    }
 }
 
-@layer components {}
+@layer components {
+    .badge-sm {
+        @apply bg-surface-glass-100 dark:bg-surface-glass-200 text-text-dark dark:text-text-light font-semibold rounded-lg px-4 py-2 shadow-md transition-transform transform hover:scale-105
+    }
+
+    .badge {
+       @apply flex-shrink-0 min-w-[120px] p-4 text-center rounded-lg shadow-sm border border-border-light dark:border-border-dark bg-surface-glass-50 dark:bg-surface-glass-100 hover:bg-surface-glass-100 hover:dark:bg-surface-glass-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg
+    }
+    .badge > * {
+        @apply text-lg font-semibold text-text-dark dark:text-text-light
+    }
+
+    .btn-secondary-md {
+        @apply mt-10 px-8 py-3 bg-brand text-text-light font-bold rounded-full shadow-lg hover:bg-brand-hover transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-brand-hover focus:ring-opacity-50
+    }
+
+    .btn-secondary-sm {
+        @apply inline-block px-6 py-2 text-sm font-medium text-white bg-brand hover:bg-brand-hover rounded-full transition
+    }
+}
